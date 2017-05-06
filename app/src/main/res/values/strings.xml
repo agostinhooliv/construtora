@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Construtora</string>
+    <string name="ambiente_producao">true</string>
+</resources>

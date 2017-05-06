@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="agostinho.com.br.construtora.br.com.construtora.app.LoginActivity">
+
+    <TextView
+        android:id="@+id/textViewSenha"
+        android:layout_width="61dp"
+        android:layout_height="21dp"
+        android:width="30dp"
+        android:text="Senha: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.519"
+        tools:layout_editor_absoluteX="76dp"
+        android:layout_above="@+id/senhaId"
+        android:layout_alignStart="@+id/senhaId" />
+
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_width="67dp"
+        android:layout_height="24dp"
+        android:width="30dp"
+        android:text="Login: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.291"
+        android:layout_above="@+id/loginId"
+        android:layout_alignStart="@+id/loginId" />
+
+    <EditText
+        android:id="@+id/loginId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnEntrarId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="140dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="166dp" />
+
+    <EditText
+        android:id="@+id/senhaId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="276dp"
+        android:layout_above="@+id/btnEntrarId"
+        android:layout_alignStart="@+id/loginId"
+        android:layout_marginBottom="44dp" />
+
+    <Button
+        android:id="@+id/btnEntrarId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteY="352dp"
+        android:layout_marginBottom="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/senhaId" />
+
+</RelativeLayout>

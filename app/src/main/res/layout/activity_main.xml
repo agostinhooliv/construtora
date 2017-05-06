@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="50dp"
+    android:layout_marginTop="100dp"
+    tools:context="br.com.construtora.activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dataDespesaLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Despesa:" />
+
+        <EditText
+            android:id="@+id/dataId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/dataDespesaLabel"
+            android:layout_marginLeft="13dp"
+            android:layout_toEndOf="@+id/dataDespesaLabel"
+            android:ems="5"
+            android:inputType="date" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/dataVencimentoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Vecimento:" />
+
+        <EditText
+            android:id="@+id/vencimentoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/dataVencimentoLabel"
+            android:layout_toEndOf="@+id/dataVencimentoLabel"
+            android:ems="5"
+            android:inputType="date" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+
+        <TextView
+            android:id="@+id/tipoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo:" />
+
+        <EditText
+            android:id="@+id/tipoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tipoLabel"
+            android:layout_marginLeft="72dp"
+            android:layout_toEndOf="@+id/tipoLabel"
+            android:ems="5"
+            android:inputType="textPersonName" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp">
+
+        <TextView
+            android:id="@+id/valorLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor: " />
+
+        <EditText
+            android:id="@+id/valorId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/valorLabel"
+            android:layout_marginLeft="63dp"
+            android:layout_toEndOf="@+id/valorLabel"
+            android:ems="5"
+            android:inputType="numberDecimal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp">
+
+        <TextView
+            android:id="@+id/obsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Observação: "/>
+
+        <EditText
+            android:id="@+id/obsId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:lines="3"
+            android:maxLines="3"
+            android:layout_alignBaseline="@id/obsId"
+            android:layout_marginLeft="103dp"
+            android:inputType="textMultiLine"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSalvarId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="220dp"
+        android:layout_marginBottom="15dp"
+        android:text="Salvar" />
+</RelativeLayout>
+
+
