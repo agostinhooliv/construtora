@@ -11,9 +11,9 @@
         app:showAsAction="always">
 
         <menu>
-            <item
+            <!--item
                 android:id="@+id/menu_list_sincronizarId"
-                android:title="Sincronizar"/>
+                android:title="Sincronizar"/-->
             <item
                 android:id="@+id/menu_list_mainId"
                 android:title="Principal"/>

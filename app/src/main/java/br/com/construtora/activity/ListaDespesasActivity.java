@@ -73,16 +73,16 @@ public class ListaDespesasActivity extends AppCompatActivity {
     public void onCreateContextMenu(ContextMenu menu, View v, final ContextMenu.ContextMenuInfo menuInfo) {
         MenuItem alterarMenuItem = menu.add("Alterar");
         MenuItem deleteMenuItem = menu.add("Delete");
-        MenuItem sincronizarMenuItem = menu.add("Sincronizar");
+       // MenuItem sincronizarMenuItem = menu.add("Sincronizar");
 
         AdapterView.AdapterContextMenuInfo adapterMenuInfo = (AdapterView.AdapterContextMenuInfo) menuInfo;
         final Despesas despesa = (Despesas) listaDespesasView.getItemAtPosition(adapterMenuInfo.position);
 
         buildUpdate(alterarMenuItem, despesa);
         buildDelete(deleteMenuItem, despesa);
-        buildSincronizar(sincronizarMenuItem, despesa);
+        //buildSincronizar(sincronizarMenuItem, despesa);
     }
-
+/*
     private void buildSincronizar(MenuItem menuItem, final Despesas despesa) {
         menuItem.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
@@ -94,7 +94,7 @@ public class ListaDespesasActivity extends AppCompatActivity {
 
         alert("Lista: " + listaDespesas.size());
 
-    }
+    }*/
 
     private void buildDelete(MenuItem menuItem, final Despesas despesa) {
         menuItem.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
@@ -121,6 +121,7 @@ public class ListaDespesasActivity extends AppCompatActivity {
         });
     }
 
+    /*
     private void sincronizar() {
 
         DespesaTask despesaTask = null;
@@ -149,6 +150,7 @@ public class ListaDespesasActivity extends AppCompatActivity {
             despesaTask = null;
         }
     }
+    */
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -166,11 +168,11 @@ public class ListaDespesasActivity extends AppCompatActivity {
 
         switch (item.getItemId()) {
 
-            case R.id.menu_list_sincronizarId:
+           /* case R.id.menu_list_sincronizarId:
 
                 this.sincronizar();
 
-                break;
+                break;*/
             case R.id.menu_list_mainId:
                 intent = new Intent(getContext(), MainActivity.class);
                 startActivity(intent);
